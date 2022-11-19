@@ -72,22 +72,25 @@ public class Xuathang extends javax.swing.JFrame {
         LỌC = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         Ngayxuat = new com.toedter.calendar.JDateChooser();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel8 = new javax.swing.JLabel();
+        Sanpham = new javax.swing.JLabel();
+        Sanpham1 = new javax.swing.JLabel();
+        Tieptucxuat = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Sitka Heading", 1, 26)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("DANH SÁCH SẢN PHẨM");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, -1, 50));
 
         jLabel3.setFont(new java.awt.Font("Sitka Heading", 3, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("XUẤT HÀNG");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, -1, 50));
+        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel3.setText("XUẤT KHO");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, -1, 50));
 
         SanphamTable.setAutoCreateRowSorter(true);
         SanphamTable.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
@@ -145,19 +148,19 @@ public class Xuathang extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
         jLabel6.setText("ID LÔ HÀNG");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 140, 30));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 140, 30));
 
         jLabel10.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
         jLabel10.setText("NGÀY XUẤT");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 150, 30));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 150, 30));
 
         Solohang.setBackground(new java.awt.Color(255, 232, 232));
         Solohang.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
-        getContentPane().add(Solohang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 150, 50));
+        getContentPane().add(Solohang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 150, 50));
 
         Soluongxuat.setBackground(new java.awt.Color(255, 232, 232));
         Soluongxuat.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
-        getContentPane().add(Soluongxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 150, 50));
+        getContentPane().add(Soluongxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, 150, 50));
 
         Xuathangtxt.setColumns(20);
         Xuathangtxt.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
@@ -175,7 +178,7 @@ public class Xuathang extends javax.swing.JFrame {
                 Thembtn1MouseClicked(evt);
             }
         });
-        getContentPane().add(Thembtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 110, 40));
+        getContentPane().add(Thembtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, 110, 40));
 
         Lammoibtn.setBackground(new java.awt.Color(153, 153, 153));
         Lammoibtn.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -185,7 +188,7 @@ public class Xuathang extends javax.swing.JFrame {
                 LammoibtnMouseClicked(evt);
             }
         });
-        getContentPane().add(Lammoibtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, 120, 40));
+        getContentPane().add(Lammoibtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 120, 40));
 
         In.setBackground(new java.awt.Color(153, 153, 153));
         In.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -195,7 +198,7 @@ public class Xuathang extends javax.swing.JFrame {
                 InMouseClicked(evt);
             }
         });
-        getContentPane().add(In, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 670, 120, 40));
+        getContentPane().add(In, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 670, 120, 40));
 
         Dangxuat.setBackground(new java.awt.Color(51, 51, 51));
         Dangxuat.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
@@ -206,7 +209,7 @@ public class Xuathang extends javax.swing.JFrame {
                 DangxuatMouseClicked(evt);
             }
         });
-        getContentPane().add(Dangxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 690, -1, 50));
+        getContentPane().add(Dangxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 700, -1, 50));
 
         Xuat.setBackground(new java.awt.Color(153, 153, 153));
         Xuat.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -216,7 +219,7 @@ public class Xuathang extends javax.swing.JFrame {
                 XuatMouseClicked(evt);
             }
         });
-        getContentPane().add(Xuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 490, 120, 40));
+        getContentPane().add(Xuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 570, 120, 40));
 
         LỌC.setBackground(new java.awt.Color(153, 153, 153));
         LỌC.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -230,21 +233,46 @@ public class Xuathang extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
         jLabel11.setText("SỐ LƯỢNG");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 150, 30));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 150, 30));
 
         Ngayxuat.setBackground(new java.awt.Color(255, 255, 255));
         Ngayxuat.setDateFormatString("dd-MM-yyyy");
         Ngayxuat.setFont(new java.awt.Font("Sitka Heading", 1, 22)); // NOI18N
-        getContentPane().add(Ngayxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 190, 50));
+        getContentPane().add(Ngayxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 190, 50));
 
-        jSeparator1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 240, 60));
+        Sanpham.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
+        Sanpham.setForeground(new java.awt.Color(51, 51, 51));
+        Sanpham.setText("NHẬP KHO");
+        Sanpham.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SanphamMouseClicked(evt);
+            }
+        });
+        getContentPane().add(Sanpham, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, 50));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\Thiết_kế_chưa_có_tên__1_-removebg-preview.png")); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -10, 310, 220));
+        Sanpham1.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
+        Sanpham1.setForeground(new java.awt.Color(255, 51, 51));
+        Sanpham1.setText("XUẤT KHO");
+        getContentPane().add(Sanpham1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\ed (8).png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 750));
+        Tieptucxuat.setBackground(new java.awt.Color(153, 153, 153));
+        Tieptucxuat.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        Tieptucxuat.setText("TIẾP TỤC XUẤT");
+        Tieptucxuat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TieptucxuatMouseClicked(evt);
+            }
+        });
+        getContentPane().add(Tieptucxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 670, 170, 40));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\Cute_Minimalist_Grocery_List__1_-removebg-preview.png")); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 30, 240, 370));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\LOGOKHOHANG-removebg-preview.png")); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\ed (10).png")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1110, 750));
 
         pack();
         setLocationRelativeTo(null);
@@ -294,7 +322,7 @@ public class Xuathang extends javax.swing.JFrame {
             if (i == 1) {
                 Xuathangtxt.setText(Xuathangtxt.getText() + "-------------------- HÓA ĐƠN XUẤT HÀNG --------------------\n" + "SỐ THỨ TỰ   SỐ LÔ HÀNG   TÊN SẢN PHẨM   SỐ LƯỢNG   NGÀY XUẤT\n    " + i + "          " + Solohang.getText() + "        " + Tenhang.getSelectedItem() + "          " + Soluongxuat.getText() + "      " + fm.format(Ngayxuat.getDate()) + "\n    ");
             } else {
-                Xuathangtxt.setText(Xuathangtxt.getText() + i + "          " + Solohang.getText() + "        " + Tenhang.getSelectedItem() + "         " + Soluongxuat.getText() + "      " + fm.format(Ngayxuat.getDate()) + "\n    ");
+                Xuathangtxt.setText(Xuathangtxt.getText() + i + "          " + Solohang.getText() + "        " + Tenhang.getSelectedItem() + "          " + Soluongxuat.getText() + "      " + fm.format(Ngayxuat.getDate()) + "\n    ");
             }
         }
            
@@ -308,14 +336,6 @@ public class Xuathang extends javax.swing.JFrame {
         Soluongxuat.setText("");
 
     }//GEN-LAST:event_LammoibtnMouseClicked
-
-    private void InMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InMouseClicked
-        try {
-            Xuathangtxt.print();
-        } catch (Exception e) {
-
-        }
-    }//GEN-LAST:event_InMouseClicked
 
     private void DangxuatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DangxuatMouseClicked
         new DangNhap().setVisible(true);
@@ -355,6 +375,26 @@ public class Xuathang extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_LỌCMouseClicked
+
+    private void InMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InMouseClicked
+        try {
+            Xuathangtxt.print();
+        } catch (Exception e) {
+
+        }
+    }//GEN-LAST:event_InMouseClicked
+
+    private void SanphamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SanphamMouseClicked
+         new Nhapkho().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_SanphamMouseClicked
+
+    private void TieptucxuatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TieptucxuatMouseClicked
+        new Xuathang().setVisible(true);
+       this.dispose();
+       
+        
+    }//GEN-LAST:event_TieptucxuatMouseClicked
     public void ChonNguoidung() {
         try {
             Con = DriverManager.getConnection("jdbc:derby://localhost:1527/DieuHoa", "Duan", "123");
@@ -384,11 +424,14 @@ public class Xuathang extends javax.swing.JFrame {
     private javax.swing.JButton Lammoibtn;
     private javax.swing.JButton LỌC;
     private com.toedter.calendar.JDateChooser Ngayxuat;
+    private javax.swing.JLabel Sanpham;
+    private javax.swing.JLabel Sanpham1;
     private javax.swing.JTable SanphamTable;
     private javax.swing.JTextField Solohang;
     private javax.swing.JTextField Soluongxuat;
     private javax.swing.JComboBox<String> Tenhang;
     private javax.swing.JButton Thembtn1;
+    private javax.swing.JButton Tieptucxuat;
     private javax.swing.JButton Xuat;
     private javax.swing.JTextArea Xuathangtxt;
     private javax.swing.JLabel jLabel1;
@@ -396,10 +439,10 @@ public class Xuathang extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }

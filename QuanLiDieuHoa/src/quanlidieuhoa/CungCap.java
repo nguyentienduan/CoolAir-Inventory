@@ -52,9 +52,8 @@ public class CungCap extends javax.swing.JFrame {
         Dangxuat = new javax.swing.JLabel();
         Nhacungcap = new javax.swing.JLabel();
         Nguoidung = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jLabel12 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -158,7 +157,7 @@ public class CungCap extends javax.swing.JFrame {
         });
         getContentPane().add(Lammoibtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 560, 120, 40));
 
-        Sanpham.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
+        Sanpham.setFont(new java.awt.Font("Sitka Heading", 3, 19)); // NOI18N
         Sanpham.setForeground(new java.awt.Color(51, 51, 51));
         Sanpham.setText("SẢN PHẨM");
         Sanpham.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -166,7 +165,7 @@ public class CungCap extends javax.swing.JFrame {
                 SanphamMouseClicked(evt);
             }
         });
-        getContentPane().add(Sanpham, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, 50));
+        getContentPane().add(Sanpham, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, -1, 50));
 
         Dangxuat.setBackground(new java.awt.Color(51, 51, 51));
         Dangxuat.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
@@ -179,13 +178,13 @@ public class CungCap extends javax.swing.JFrame {
         });
         getContentPane().add(Dangxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, 50));
 
-        Nhacungcap.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
-        Nhacungcap.setForeground(new java.awt.Color(51, 51, 51));
+        Nhacungcap.setFont(new java.awt.Font("Sitka Heading", 3, 19)); // NOI18N
+        Nhacungcap.setForeground(new java.awt.Color(255, 51, 51));
         Nhacungcap.setText("NHÀ CUNG CẤP");
-        getContentPane().add(Nhacungcap, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, 50));
+        getContentPane().add(Nhacungcap, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, 50));
 
         Nguoidung.setBackground(new java.awt.Color(51, 51, 51));
-        Nguoidung.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
+        Nguoidung.setFont(new java.awt.Font("Sitka Heading", 3, 19)); // NOI18N
         Nguoidung.setForeground(new java.awt.Color(51, 51, 51));
         Nguoidung.setText("NGƯỜI DÙNG");
         Nguoidung.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -193,16 +192,13 @@ public class CungCap extends javax.swing.JFrame {
                 NguoidungMouseClicked(evt);
             }
         });
-        getContentPane().add(Nguoidung, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 150, 50));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\OneDrive\\Pictures\\Java\\Cute Minimalist Grocery List.png")); // NOI18N
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 190, 250, 260));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\Thiết_kế_chưa_có_tên__1_-removebg-preview.png")); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -10, 310, 220));
+        getContentPane().add(Nguoidung, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 150, 50));
 
         jSeparator1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 290, 60));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\Thiết_kế_chưa_có_tên__3_-removebg-preview.png")); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, 200, 480, 390));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\ed (6).png")); // NOI18N
@@ -359,9 +355,8 @@ public class CungCap extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

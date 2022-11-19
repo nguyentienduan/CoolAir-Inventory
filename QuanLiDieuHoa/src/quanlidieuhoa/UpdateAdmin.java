@@ -37,33 +37,31 @@ public class UpdateAdmin extends javax.swing.JFrame {
         Tenadmin = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setFont(new java.awt.Font("Sitka Heading", 1, 30)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(120, 66, 0));
+        jLabel7.setFont(new java.awt.Font("Sitka Heading", 3, 30)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
         jLabel7.setText("CẬP NHẬT TÀI KHOẢN ADMIN");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 420, 44));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 420, 44));
 
         jLabel6.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
         jLabel6.setText("MẬT KHẨU");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 150, 30));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 150, 30));
 
         Matkhauadmin.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
-        getContentPane().add(Matkhauadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 190, 50));
+        getContentPane().add(Matkhauadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 190, 50));
 
         jLabel8.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
         jLabel8.setText("TÊN ĐĂNG NHẬP");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 160, 30));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 160, 30));
 
         Tenadmin.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
-        getContentPane().add(Tenadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 190, 50));
+        getContentPane().add(Tenadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 190, 50));
 
         jButton4.setBackground(new java.awt.Color(153, 153, 153));
         jButton4.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -73,7 +71,7 @@ public class UpdateAdmin extends javax.swing.JFrame {
                 jButton4MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 140, 50));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 140, 50));
 
         jButton5.setBackground(new java.awt.Color(153, 153, 153));
         jButton5.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -83,32 +81,18 @@ public class UpdateAdmin extends javax.swing.JFrame {
                 jButton5MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 140, 50));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 140, 50));
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 22)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel1.setText("X");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 0, -1, -1));
+        jSeparator1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 490, 60));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\OneDrive\\Pictures\\Java\\15847314_v960-ning-11.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\ed.png")); // NOI18N
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\OneDrive\\Pictures\\Java\\Cute Minimalist Grocery List (2).png")); // NOI18N
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 180, 250, 260));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         Tenadmin.setText("");
@@ -173,11 +157,10 @@ public class UpdateAdmin extends javax.swing.JFrame {
     private javax.swing.JTextField Tenadmin;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }

@@ -51,10 +51,11 @@ public class NguoiDung extends javax.swing.JFrame {
         Sanpham = new javax.swing.JLabel();
         Nhacungcap = new javax.swing.JLabel();
         Nguoidung = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         Dangxuat = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -168,7 +169,7 @@ public class NguoiDung extends javax.swing.JFrame {
         jLabel2.setText("NGƯỜI  DÙNG");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, -1, 50));
 
-        Sanpham.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
+        Sanpham.setFont(new java.awt.Font("Sitka Heading", 3, 19)); // NOI18N
         Sanpham.setForeground(new java.awt.Color(51, 51, 51));
         Sanpham.setText("SẢN PHẨM");
         Sanpham.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -176,9 +177,9 @@ public class NguoiDung extends javax.swing.JFrame {
                 SanphamMouseClicked(evt);
             }
         });
-        getContentPane().add(Sanpham, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, 50));
+        getContentPane().add(Sanpham, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, -1, 50));
 
-        Nhacungcap.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
+        Nhacungcap.setFont(new java.awt.Font("Sitka Heading", 3, 19)); // NOI18N
         Nhacungcap.setForeground(new java.awt.Color(51, 51, 51));
         Nhacungcap.setText("NHÀ CUNG CẤP");
         Nhacungcap.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -186,19 +187,16 @@ public class NguoiDung extends javax.swing.JFrame {
                 NhacungcapMouseClicked(evt);
             }
         });
-        getContentPane().add(Nhacungcap, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, 50));
+        getContentPane().add(Nhacungcap, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, 50));
 
         Nguoidung.setBackground(new java.awt.Color(51, 51, 51));
-        Nguoidung.setFont(new java.awt.Font("Sitka Heading", 3, 20)); // NOI18N
-        Nguoidung.setForeground(new java.awt.Color(51, 51, 51));
+        Nguoidung.setFont(new java.awt.Font("Sitka Heading", 3, 19)); // NOI18N
+        Nguoidung.setForeground(new java.awt.Color(255, 51, 51));
         Nguoidung.setText("NGƯỜI DÙNG");
-        getContentPane().add(Nguoidung, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 150, 50));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\OneDrive\\Pictures\\Java\\Cute Minimalist Grocery List.png")); // NOI18N
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 190, 250, 260));
+        getContentPane().add(Nguoidung, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 150, 50));
 
         Dangxuat.setBackground(new java.awt.Color(51, 51, 51));
-        Dangxuat.setFont(new java.awt.Font("Sitka Heading", 1, 20)); // NOI18N
+        Dangxuat.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
         Dangxuat.setForeground(new java.awt.Color(51, 51, 51));
         Dangxuat.setText("Đăng xuất");
         Dangxuat.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -206,13 +204,23 @@ public class NguoiDung extends javax.swing.JFrame {
                 DangxuatMouseClicked(evt);
             }
         });
-        getContentPane().add(Dangxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, 50));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\Thiết_kế_chưa_có_tên__1_-removebg-preview.png")); // NOI18N
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -10, 310, 220));
+        getContentPane().add(Dangxuat, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 100, 30));
 
         jSeparator1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 260, 60));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\Thiết_kế_chưa_có_tên__3_-removebg-preview.png")); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, 200, 480, 390));
+
+        jLabel3.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        jLabel3.setText("Cập nhật admin");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, -1, -1));
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 140, 20));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\ed (3).png")); // NOI18N
@@ -329,6 +337,11 @@ public class NguoiDung extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_NhacungcapMouseClicked
 
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        new UpdateAdmin().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -380,13 +393,14 @@ public class NguoiDung extends javax.swing.JFrame {
     private javax.swing.JButton Xoabtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }
