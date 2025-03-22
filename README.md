@@ -31,12 +31,5 @@ CoolAir-Inventory is a **warehouse management system** designed for air conditio
    - Update the database connection settings in the Java code.
 4. **Run the application.**
 
-## 📸 Screenshots
-_Add screenshots of the application interface here._
 
-## 📞 Contact
-For any inquiries or contributions, feel free to contact me via GitHub or email.
 
----
-
-📌 **Feel free to customize this README further based on your project's needs!** 🚀
